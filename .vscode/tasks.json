@@ -11,9 +11,9 @@
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}.out",
 				"-isystem",
-				"${HOME}/local/include",
+				"${HOME}/.local/include",
 				"-L",
-				"${HOME}/local/lib",
+				"${HOME}/.local/lib",
 				"-lCatch2Main",
 				"-lCatch2"
 			],
