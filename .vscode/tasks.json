@@ -3,13 +3,14 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: g++ build active directory",
+			"label": "C/C++: g++ test_main",
 			"command": "/usr/bin/g++",
 			"args": [
 				"-g",
-				"${file}",
+				"-std=c++17",
+				"${fileDirname}/*.cpp",
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}.out",
+				"${fileDirname}/test_main.out",
 				"-isystem",
 				"${HOME}/.local/include",
 				"-L",

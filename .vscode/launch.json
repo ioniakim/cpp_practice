@@ -8,7 +8,7 @@
             "name": "g++ - Build and debug active directory",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "program": "${fileDirname}/test_main.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -22,7 +22,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ build active directory",
+            "preLaunchTask": "C/C++: g++ test_main",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
