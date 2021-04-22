@@ -4,21 +4,23 @@ using namespace std::string_literals;
 
 namespace io {
 
-std::string
-join_string(std::string_view sep, std::initializer_list<std::string_view> strs)
-{
-    if (std::size(strs) == 0) return ""s;
+// template <typename Char,
+//     typename ForwardIt,
+//     typename String,
+//     typename StringView>
+// String
+// join_string(StringView sep, ForwardIt first, ForwardIt last)
+// {
+//     if (first == last) return String();
 
-    auto it = std::begin(strs);
-    auto ret = std::string(*it);
-    ++it;
-    while(it != std::end(strs)){
-        ret += std::string(sep);
-        ret += std::string(*it);
-        ++it;
-    }
-    return ret;
-}
-
+//     auto ret = String(*first);
+//     ++first;
+//     while(first != last){
+//         ret += sep;
+//         ret += *first;
+//         ++first;
+//     }
+//     return ret;
+// }
 
 }
